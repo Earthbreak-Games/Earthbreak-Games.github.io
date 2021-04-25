@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/earthbreak/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/earthbreak/static/js/main.9d9e4029.chunk.js",
+    "main.js.map": "/earthbreak/static/js/main.9d9e4029.chunk.js.map",
+    "runtime-main.js": "/earthbreak/static/js/runtime-main.6fd38760.js",
+    "runtime-main.js.map": "/earthbreak/static/js/runtime-main.6fd38760.js.map",
+    "static/js/2.a6d47e34.chunk.js": "/earthbreak/static/js/2.a6d47e34.chunk.js",
+    "static/js/2.a6d47e34.chunk.js.map": "/earthbreak/static/js/2.a6d47e34.chunk.js.map",
+    "static/js/3.6838c61c.chunk.js": "/earthbreak/static/js/3.6838c61c.chunk.js",
+    "static/js/3.6838c61c.chunk.js.map": "/earthbreak/static/js/3.6838c61c.chunk.js.map",
+    "index.html": "/earthbreak/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/earthbreak/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.a6d47e34.chunk.js.LICENSE.txt": "/earthbreak/static/js/2.a6d47e34.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/earthbreak/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6fd38760.js",
+    "static/js/2.a6d47e34.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.9d9e4029.chunk.js"
+  ]
+}
