@@ -11,7 +11,6 @@
 
 .menu_icon{
     width: 4vh;
-
     display: inline;
 }
 
@@ -20,7 +19,6 @@
     margin-top: 4vh;
     background-color:#c3baba;
     border:0px;
-    box-shadow: 9px 9px 16px rgba(0,0,0, 0.5), -9px -9px 16px  rgb(227,222,222,0.6);
     border-radius: 10%;
 }
 
@@ -29,12 +27,11 @@
     margin-top: 4vh;
     background-color:#0C1B33;
     border:0px;
-    box-shadow: 9px 9px 16px rgba(0,0,0, 0.5), -9px -9px 16px  rgb(12, 27, 51,0.6);
     border-radius: 10%;
 }
 
 .NavBar_Container{
-    height: 10vh;
+    height: 14vh;
     background-color: #c3baba;
 }
 
@@ -45,7 +42,6 @@
     text-align: center;
     width: 45vw;
     border-radius: 10%;
-    box-shadow: 9px 9px 16px rgba(0,0,0, 0.5), -9px -9px 16px  rgb(227,222,222,0.6);
     position: absolute;
 }
 
@@ -67,9 +63,21 @@
     left: 0px;
 }
 
+.opening{
+  animation-name: menu_open;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+.closing{
+  animation-name: menu_close;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
 @keyframes menu_open {
     from {
-        left:-100vw
+        left:-100vw;
     }
     to {
         left: 0;
@@ -78,21 +86,21 @@
 
   @keyframes menu_close {
     from {
-      transform: rotate(0deg);
+      left:-100vw;
     }
     to {
-      transform: rotate(360deg);
+        left: 0;
     }
   }
 
-.hide-mobile {
-    @media (max-width: 480px) {
-      display: none;
+  @media only screen and (max-width: 600px) {
+    .hide_mobile {
+      display: none !important;
     }
   }
   
-  .hide-desktop {
-    @media not all and (max-width: 480px) {
-      display: none;
+  @media not all and (max-width: 480px) {
+    .hide_desktop {
+      display: none !important;
     }
   }

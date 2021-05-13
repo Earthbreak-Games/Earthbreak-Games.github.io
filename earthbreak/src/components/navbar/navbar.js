@@ -8,9 +8,21 @@ import icon_Font from '../../images/title.png'
 
 function NavBar() {
     const [isOpen, setIsOpen] = useState(false);
-    const [isOpenAnimation, setOpenAnimation] = useState(false);
     
     const toggle = () => setIsOpen(!isOpen);
+    
+
+    // to do : make look good 
+    const closedStyle = {
+        left: '-100vw',
+        transition: 'left 0.5s'
+    };
+      
+    /* This CSS style is applied when the drawer is closed */
+    const openedStyle = {
+        left: 0 /* max-width is 0 in the closed drawer */,
+        transition: 'left 0.5s'
+    };
 
     const pages = ["Home", "Blog"]
     
@@ -27,23 +39,21 @@ function NavBar() {
                 </div>
             </div>
 
-            <button className={styles.menu_icon_button_lite}><img src={menuIcon} className={styles.menu_icon} alt="menu" onClick={() => setIsOpen(!isOpen)} /></button>
+            <button className={styles.menu_icon_button_lite + ' ' + styles.hide_desktop}><img src={menuIcon} className={styles.menu_icon } alt="menu" onClick={() => setIsOpen(!isOpen)} /></button>
         
         </div>
-        {isOpen ? (
-        
-        <div className={styles.overtop}>
+
+        <div className={styles.overtop} style={isOpen ? openedStyle : closedStyle}>
             
             <button className={styles.menu_icon_button_dark}><img src={menuIcon} className={styles.menu_icon} alt="menu" onClick={() => setIsOpen(!isOpen)} /></button>
         
-            <ul className={styles.page_list_container}>
-                {pages.map((page) =>{
-                    return <li className={styles.page_link_container}>{page}</li>
+            <ul className={styles.page_list_item_container}>
+                {pages.map((page) => {
+                    return <li key ={page} className={styles.page_link_container}>{page}</li>
                 })}
             </ul>
         </div>
         
-        ) : (<></>)}
         
             
       </div>
