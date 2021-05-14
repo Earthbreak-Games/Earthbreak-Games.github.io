@@ -4,14 +4,22 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import LandingPage from './pages/landingpage/landingpage'
 import NavBar from './components/navbar/navbar'
+import { HashRouter as Router, Route } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <NavBar></NavBar>
-    <LandingPage/>
+    
+    <Router>
+      <NavBar/>
+      <Route exact path="/" component={LandingPage}/>
+      
+    </Router>
+    
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
+// <Route path="/Blog" component={}/>
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

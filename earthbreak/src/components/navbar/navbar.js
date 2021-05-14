@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from './navbar.module.css';
-import logo from '../../images/logo_white_words.png';
-import {NavLink} from 'reactstrap'
+import logo from '../../images/logo_black_no_words.png';
+import {Link} from 'react-router-dom'
 import menuIcon from '../../images/menu.png'
 import icon_Font from '../../images/title.png'
 
@@ -24,13 +24,15 @@ function NavBar() {
         transition: 'left 0.5s'
     };
 
-    const pages = ["Home", "Blog"]
+    const pages = [{text: "Home", link: ""}, {text: "About", link: "about"}, {text: "Blog", link: "blog"}, {text: "Connect", link: "connect"}]
     
     return (
       <div>
         
         <div className={styles.NavBar_Container}>
-            <div className={styles.title_wrapper}>
+            
+            {/*For Movi here*/}
+            <div className={styles.title_wrapper + ' ' + styles.hide_desktop}>
                 <div className={styles.title_text_wrapper}>
                     <p className={styles.title_text +' '+ styles.earthbreak}>Earthbreak</p>
                 </div>
@@ -40,16 +42,35 @@ function NavBar() {
             </div>
 
             <button className={styles.menu_icon_button_lite + ' ' + styles.hide_desktop}><img src={menuIcon} className={styles.menu_icon } alt="menu" onClick={() => setIsOpen(!isOpen)} /></button>
-        
+
+            {/*for desktop dev*/}
+            <div className={styles.hide_mobile + ' ' + styles.NavBar_item_container}>
+                <img src={logo} className={styles.logo}/>
+                <div className={styles.title_wrapper}>
+                    <div className={styles.title_text_wrapper}>
+                        <p className={styles.title_text}>Earthbreak Games</p>
+                    </div>
+                </div>
+                {/*menu items*/}
+                <div className={styles.page_list_item_container}>
+                    {pages.map((page) => {
+                        return <div className={styles.page_link_container} key={page}>
+                            <Link to={'/'+page.link} className={styles.linkItem}>{page.text}</Link>
+                        </div>
+                    })}
+                </div>
+            </div>
+            
         </div>
 
-        <div className={styles.overtop} style={isOpen ? openedStyle : closedStyle}>
-            
+        <div className={styles.overtop} style={isOpen ? openedStyle : closedStyle}>            
             <button className={styles.menu_icon_button_dark}><img src={menuIcon} className={styles.menu_icon} alt="menu" onClick={() => setIsOpen(!isOpen)} /></button>
-        
+            
             <ul className={styles.page_list_item_container}>
                 {pages.map((page) => {
-                    return <li key ={page} className={styles.page_link_container}>{page}</li>
+                    return <li key ={page} className={styles.page_link_container}>
+                            <Link to={'/'+page.link} className={styles.linkItem} onClick={() => setIsOpen(!isOpen)} >{page.text}</Link>
+                        </li>
                 })}
             </ul>
         </div>
