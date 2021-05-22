@@ -2,7 +2,7 @@ ame: Build and Deploy
 on:
   push:
     branches:
-      - master
+      - nextjs
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
