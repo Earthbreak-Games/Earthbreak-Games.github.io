@@ -24,6 +24,9 @@ jobs:
       - run: npm install
       - run: npm run build
       - run: mkdir out
+      - run: touch out/.nojekyll
+      - run: touch out/CNAME
+      - run: echo \"https://earthbreakgames.com/" >> out/CNAME
         env:
             CI: true
 
