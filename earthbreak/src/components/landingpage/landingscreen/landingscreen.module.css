@@ -16,7 +16,7 @@
   .Inside_boarder {
     padding-left: 3vh;
     padding-right: 3vh;
-    background-color: #c3baba;
+    background-color: var(--main-white-color);
   }
 
   .App_header {
@@ -27,9 +27,9 @@
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
-    color: c3baba;
+    color: #c3baba;
     
-    border-radius: 6%;
+    border-radius: 20px;
   }
   
   .App_link {

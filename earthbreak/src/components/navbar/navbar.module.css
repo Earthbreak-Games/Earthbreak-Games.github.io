@@ -30,7 +30,7 @@
     width: 100vw;
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: 100vw;
 }
 
 
@@ -129,9 +129,12 @@
     .linkItem{
       font-size: 1.5vw;
       margin: 1vw;
-      color: var(--main-black-color);
+      color: var(--main-black-color) !important;
     }
 
+    .selected{
+      text-decoration: underline;
+    }
 
     .NavBar_item_container{
       padding-top: 1.5vh;

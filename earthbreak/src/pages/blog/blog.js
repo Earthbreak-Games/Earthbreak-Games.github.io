@@ -1,12 +1,15 @@
-import './landingpage.module.css';
-import LandingScreen from '../../components/landingpage/landingscreen/landingscreen'
+import './blog.module.css';
+import Bloghome from '../../components/blog/bloghome/bloghome'
 
-function LandingPage() {
+function Blog() {
+
+
+
   return (
     <div>
-        <LandingScreen></LandingScreen>
+        <Bloghome/>
     </div>
   );
 }
 
-export default LandingPage;
+export default Blog;

@@ -8,13 +8,13 @@ import icon_Font from '../../images/title.png'
 
 function NavBar() {
     const [isOpen, setIsOpen] = useState(false);
+    const [isSelected, SetSelected] = useState("Home");
     
-    const toggle = () => setIsOpen(!isOpen);
     
 
     // to do : make look good 
     const closedStyle = {
-        left: '-100vw',
+        left: '100vw',
         transition: 'left 0.5s'
     };
       
@@ -54,8 +54,16 @@ function NavBar() {
                 {/*menu items*/}
                 <div className={styles.page_list_item_container}>
                     {pages.map((page) => {
-                        return <div className={styles.page_link_container} key={page}>
-                            <Link to={'/'+page.link} className={styles.linkItem}>{page.text}</Link>
+                        return <div className={styles.page_link_container} key={page.text}>
+                            {isSelected == page.text ? 
+                            (
+                                <Link className={styles.linkItem + ' ' + styles.selected} >{page.text}</Link>
+                                
+                            ) : 
+                            (
+                                <Link to={'/'+page.link} className={styles.linkItem} onClick={() => SetSelected(page.text)} >{page.text}</Link>
+                            )}
+                            
                         </div>
                     })}
                 </div>
@@ -63,12 +71,12 @@ function NavBar() {
             
         </div>
 
-        <div className={styles.overtop} style={isOpen ? openedStyle : closedStyle}>            
+        <div className={styles.overtop +' ' + styles.hide_desktop} style={isOpen ? openedStyle : closedStyle}>            
             <button className={styles.menu_icon_button_dark}><img src={menuIcon} className={styles.menu_icon} alt="menu" onClick={() => setIsOpen(!isOpen)} /></button>
             
             <ul className={styles.page_list_item_container}>
                 {pages.map((page) => {
-                    return <li key ={page} className={styles.page_link_container}>
+                    return <li key ={page.text} className={styles.page_link_container}>
                             <Link to={'/'+page.link} className={styles.linkItem} onClick={() => setIsOpen(!isOpen)} >{page.text}</Link>
                         </li>
                 })}
