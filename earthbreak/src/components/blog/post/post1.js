@@ -2,7 +2,7 @@ function Post1() {
 
     return (
         <div>
-            This is Post1
+            I REALLY HATE NEXTJS
         </div>
     );
 }

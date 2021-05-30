@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { HashRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route, useParams } from "react-router-dom";
 
 import NavBar from './components/navbar/navbar'
 import LandingPage from './pages/landingpage/landingpage'
 import Blog from './pages/blog/blog'
-
+import Post_loader from './components/blog/post_loader'
 
 
 ReactDOM.render(
@@ -17,12 +17,17 @@ ReactDOM.render(
       <NavBar/>
       <Route exact path="/" component={LandingPage}/>
       <Route path="/blog" component={Blog}/>
+      <Route path="/post/:id" children={<Post_loader />}/>
     </Router>
-    
-    
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+
+
+
+
+
 // 
 
 // If you want to start measuring performance in your app, pass a function
