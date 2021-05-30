@@ -1,23 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.928143ab.chunk.css",
-    "main.js": "/static/js/main.da3783ae.chunk.js",
-    "main.js.map": "/static/js/main.da3783ae.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.32baa644.js",
-    "runtime-main.js.map": "/static/js/runtime-main.32baa644.js.map",
-    "static/js/2.a6d47e34.chunk.js": "/static/js/2.a6d47e34.chunk.js",
-    "static/js/2.a6d47e34.chunk.js.map": "/static/js/2.a6d47e34.chunk.js.map",
-    "static/js/3.6838c61c.chunk.js": "/static/js/3.6838c61c.chunk.js",
-    "static/js/3.6838c61c.chunk.js.map": "/static/js/3.6838c61c.chunk.js.map",
+    "static/js/0.b2b7ae2c.chunk.js": "/static/js/0.b2b7ae2c.chunk.js",
+    "static/js/0.b2b7ae2c.chunk.js.map": "/static/js/0.b2b7ae2c.chunk.js.map",
+    "static/js/1.4529218b.chunk.js": "/static/js/1.4529218b.chunk.js",
+    "static/js/1.4529218b.chunk.js.map": "/static/js/1.4529218b.chunk.js.map",
+    "main.css": "/static/css/main.fccf0107.chunk.css",
+    "main.js": "/static/js/main.044bfe58.chunk.js",
+    "main.js.map": "/static/js/main.044bfe58.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2a064c49.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2a064c49.js.map",
+    "static/js/4.708b8515.chunk.js": "/static/js/4.708b8515.chunk.js",
+    "static/js/4.708b8515.chunk.js.map": "/static/js/4.708b8515.chunk.js.map",
+    "static/js/5.d5af7fc0.chunk.js": "/static/js/5.d5af7fc0.chunk.js",
+    "static/js/5.d5af7fc0.chunk.js.map": "/static/js/5.d5af7fc0.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.928143ab.chunk.css.map": "/static/css/main.928143ab.chunk.css.map",
-    "static/js/2.a6d47e34.chunk.js.LICENSE.txt": "/static/js/2.a6d47e34.chunk.js.LICENSE.txt",
-    "static/media/logo_white_words.94777584.png": "/static/media/logo_white_words.94777584.png"
+    "static/css/main.fccf0107.chunk.css.map": "/static/css/main.fccf0107.chunk.css.map",
+    "static/js/4.708b8515.chunk.js.LICENSE.txt": "/static/js/4.708b8515.chunk.js.LICENSE.txt",
+    "static/media/logo_black_no_words.4f4ecbef.png": "/static/media/logo_black_no_words.4f4ecbef.png",
+    "static/media/logo_white_words.94777584.png": "/static/media/logo_white_words.94777584.png",
+    "static/media/title.2f5430aa.png": "/static/media/title.2f5430aa.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.32baa644.js",
-    "static/js/2.a6d47e34.chunk.js",
-    "static/css/main.928143ab.chunk.css",
-    "static/js/main.da3783ae.chunk.js"
+    "static/js/runtime-main.2a064c49.js",
+    "static/js/4.708b8515.chunk.js",
+    "static/css/main.fccf0107.chunk.css",
+    "static/js/main.044bfe58.chunk.js"
   ]
 }
