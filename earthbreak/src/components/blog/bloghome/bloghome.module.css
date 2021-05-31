@@ -1,0 +1,20 @@
+.app{
+    background-color: var(--main-white-color);
+    padding: 20px;
+    padding-top: 14vh;
+}
+
+.outerpostshell {
+    background-color: var(--off-white-color);
+    box-shadow: 5px 10px;;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.title{
+    color: black;
+}
+
+.body{
+    color: black;
+}

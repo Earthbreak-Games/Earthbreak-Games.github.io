@@ -15,13 +15,15 @@ function NavBar() {
     // to do : make look good 
     const closedStyle = {
         left: '100vw',
-        transition: 'left 0.5s'
+        width: 0,
+        transition: 'left 0.5s, width 1s',
+        overflow:'hidden'
     };
       
     /* This CSS style is applied when the drawer is closed */
     const openedStyle = {
         left: 0 /* max-width is 0 in the closed drawer */,
-        transition: 'left 0.5s'
+        transition: 'left 0.5s',
     };
 
     const pages = [{text: "Home", link: ""}, {text: "About", link: "about"}, {text: "Blog", link: "blog"}, {text: "Connect", link: "connect"}]
