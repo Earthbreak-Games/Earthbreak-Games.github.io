@@ -3,7 +3,7 @@ import styles from './navbar.module.css';
 import logo from '../../images/logo_black_no_words.png';
 import {Link} from 'react-router-dom'
 import menuIcon from '../../images/menu.png'
-import icon_Font from '../../images/title.png'
+// import icon_Font from '../../images/title.png'
 
 
 function NavBar() {
@@ -45,7 +45,7 @@ function NavBar() {
 
             {/*for desktop dev*/}
             <div className={styles.hide_mobile + ' ' + styles.NavBar_item_container}>
-                <img src={logo} className={styles.logo}/>
+                <img src={logo} className={styles.logo} alt="earthbreak games logo"/>
                 <div className={styles.title_wrapper}>
                     <div className={styles.title_text_wrapper}>
                         <p className={styles.title_text}>Earthbreak Games</p>
@@ -55,9 +55,9 @@ function NavBar() {
                 <div className={styles.page_list_item_container}>
                     {pages.map((page) => {
                         return <div className={styles.page_link_container} key={page.text}>
-                            {isSelected == page.text ? 
+                            {isSelected === page.text ? 
                             (
-                                <Link className={styles.linkItem + ' ' + styles.selected} >{page.text}</Link>
+                                <Link to={'/'+page.link} className={styles.linkItem + ' ' + styles.selected} >{page.text}</Link>
                                 
                             ) : 
                             (

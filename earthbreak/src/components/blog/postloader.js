@@ -1,7 +1,8 @@
 import React, { Suspense } from 'react';
-import { HashRouter as Router, Route, useParams } from "react-router-dom";
+import {useParams } from "react-router-dom";
 
-function Post_loader() {
+
+function Postloader() {
     // We can use the `useParams` hook here to access
     // the dynamic pieces of the URL.
     let { id } = useParams();
@@ -12,14 +13,12 @@ function Post_loader() {
     }
   
     return (  
-      <>
       <Suspense fallback={<div>Loading...</div>}>
         {update(id)}
         <Post/>
       </Suspense>
-      </>
     );
   
 }
 
-export default Post_loader
+export default Postloader
