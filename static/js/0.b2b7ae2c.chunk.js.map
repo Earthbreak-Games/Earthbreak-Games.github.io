@@ -1,1 +1,0 @@
-{"version":3,"sources":["components/blog/post/post1.js"],"names":["Post1"],"mappings":"2HASeA,UATf,WAEI,OACI","file":"static/js/0.b2b7ae2c.chunk.js","sourcesContent":["function Post1() {\n\n    return (\n        <div>\n            I REALLY HATE NEXTJS\n        </div>\n    );\n}\n\nexport default Post1;"],"sourceRoot":""}

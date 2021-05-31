@@ -1,2 +1,0 @@
-(this.webpackJsonpearthbreak=this.webpackJsonpearthbreak||[]).push([[0],{21:function(e,t,r){"use strict";r.r(t);var a=r(0);t.default=function(){return Object(a.jsx)("div",{children:"I REALLY HATE NEXTJS"})}}}]);
-//# sourceMappingURL=0.b2b7ae2c.chunk.js.map
