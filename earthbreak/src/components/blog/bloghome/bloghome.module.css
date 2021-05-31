@@ -1,20 +1,169 @@
-.app{
-    background-color: var(--main-white-color);
-    padding: 20px;
-    padding-top: 14vh;
+
+    .my_masonry_grid {
+        display: -webkit-box; /* Not needed if autoprefixing */
+        display: -ms-flexbox; /* Not needed if autoprefixing */
+        display: flex;
+        margin-left: -30px; /* gutter size offset */
+        width: auto;
+    }
+    .my_masonry_grid_column {
+        padding-left: 30px; /* gutter size */
+        background-clip: padding-box;
+    }
+      
+      /* Style your items */
+    .my_masonry_grid_column > div { /* change div to reference your elements you put in <Masonry> */
+        background: grey;
+        margin-bottom: 30px;
+    }
+
+
+@media only screen and (max-width: 600px) {
+    /*mobile*/
+    .hide_mobile {
+        display: none !important;
+    }
+
+
+    .app{
+        background-color: var(--main-white-color);
+        padding: 0px;
+        padding-top: 14vh;
+    }
+
+    .outerpostshell {
+        margin: 10px;
+    }
+
+    .post_title{
+        font-family: omnes-pro;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: .01em;
+        color: black;
+        font-size: 5vw;
+        margin: 0;
+    }
+
+    .post_body{
+        color: black;
+    }
+
+    .post_date{
+        color: var(--main-gray-color);
+        font-family: omnes-pro;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: .01em;
+        font-size: 3vw;
+    }
+
+    .post_image{
+        width: 100%;
+        background-color: black;
+    }
+
+    .post_image_container{
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .about_bio{
+        color: var(--main-gray-color);
+        font-family: omnes-pro;
+        font-weight: 400;
+        font-style: normal;
+
+        font-size: 7vw;
+        text-align: center;
+    }
+
+    .bio_container{
+        width: 100%;
+    }
+
 }
 
-.outerpostshell {
-    background-color: var(--off-white-color);
-    box-shadow: 5px 10px;;
-    border-radius: 10px;
-    margin: 20px;
-}
 
-.title{
-    color: black;
-}
+@media not all and (max-width: 600px) {
+    /*desktop*/
+    .hide_desktop {
+        display: none !important;
+    }
 
-.body{
-    color: black;
+    .app{
+        background-color: var(--main-white-color);
+        padding: 0px;
+        padding-top: 10vh;
+    }
+
+
+    /*.outerpostshell{
+        max-width: 20%;
+    }*/
+
+    .post_title{
+        font-family: omnes-pro;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: .01em;
+        color: black;
+        font-size: 1.5vw;
+        margin: 0;
+    }
+
+
+    .post_date{
+        color: var(--main-gray-color);
+        font-family: omnes-pro;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: .01em;
+        font-size: 0.7vw;
+    }
+
+    .post_image{
+        width: 100%;
+        background-color: black;
+    }
+
+    .post_image_container{
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .about_bio{
+        color: var(--main-gray-color);
+        font-family: omnes-pro;
+        font-weight: 400;
+        font-style: normal;
+
+        font-size: 7vw;
+        text-align: center;
+    }
+
+    .about_bio{
+        color: var(--main-gray-color);
+        font-family: omnes-pro;
+        font-weight: 400;
+        font-style: normal;
+
+        font-size: 2.5vw;
+        text-align: center;
+    }
+
+
+    .bio_container{
+        width: 100%;
+    }
+
+
+
+    .projects_container{
+        /*background-color: gray;*/
+        margin-right: 10%;
+        margin-left: 10%;
+        max-width: 80%;
+    }
+
 }

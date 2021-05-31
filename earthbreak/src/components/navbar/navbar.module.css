@@ -89,7 +89,7 @@
 
   }
   
-  @media not all and (max-width: 480px) {
+  @media not all and (max-width: 600px) {
     .hide_desktop {
       display: none !important;
     }
