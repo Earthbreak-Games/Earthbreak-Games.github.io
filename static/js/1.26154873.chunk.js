@@ -1,0 +1,2 @@
+(this.webpackJsonpearthbreak=this.webpackJsonpearthbreak||[]).push([[1],{25:function(t,e,s){"use strict";s.r(e);var r=s(0);e.default=function(){return Object(r.jsx)("div",{children:"This is Post2"})}}}]);
+//# sourceMappingURL=1.26154873.chunk.js.map

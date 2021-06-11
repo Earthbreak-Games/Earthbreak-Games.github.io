@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/blog/post/post2.js"],"names":["Post1"],"mappings":"2HASeA,UATf,WAEI,OACI","file":"static/js/1.26154873.chunk.js","sourcesContent":["function Post1() {\r\n\r\n    return (\r\n        <div>\r\n            This is Post2\r\n        </div>\r\n    );\r\n}\r\n\r\nexport default Post1;"],"sourceRoot":""}
