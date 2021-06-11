@@ -8,7 +8,7 @@ import NavBar from './components/navbar/navbar'
 import LandingPage from './pages/landingpage/landingpage'
 import Blog from './pages/blog/blog'
 import Postloader from './components/blog/postloader'
-
+import ContactPage from './pages/contact/contactpage'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,6 +17,7 @@ ReactDOM.render(
       <NavBar/>
       <Route exact path="/" component={LandingPage}/>
       <Route path="/blog" component={Blog}/>
+      <Route path="/connect" component={ContactPage}/>
       <Route path="/post/:id" children={<Postloader />}/>
     </Router>
   </React.StrictMode>,

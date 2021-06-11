@@ -3,13 +3,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
 import FillerImage from '../../../images/logo_white_words.png'
+import image1 from '../../../images/Screenshot.png'
+import image2 from '../../../images/Screenshot2.png'
 import Masonry from 'react-masonry-css'
 
 function Bloghome() {
 
     const posts = [
-        {title: "Map generation and Story Telling ", link:'../post/2', date:'12-19-2021', image: FillerImage, image_alt:'filler'},
-        {title: "Createing a new biomas", link:'../post/1', date:'12-21-2021', image: FillerImage, image_alt:'filler'}, 
+        {title: "Map generation and Story Telling ", link:'../post/2', date:'12-19-2021', image: image1, image_alt:'filler'},
+        {title: "Creating a new biomass", link:'../post/1', date:'12-21-2021', image: image2, image_alt:'filler'}, 
         {title: "Before the beginning there was nothing", link:'../post/1', date:'12-24-2021', image: FillerImage, image_alt:'filler'},
     ]
 
